@@ -1,0 +1,19 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gereltods/back-end.git",
+  "author": "Gerelt-Od",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.21.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "postinstall": "^0.7.4"
+  }
+}
