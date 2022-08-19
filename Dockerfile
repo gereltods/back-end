@@ -8,8 +8,11 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
-EXPOSE 80
-CMD ["node", ".index.js"]
+RUN npm install pm2 -g
+
+EXPOSE 8000
+
+CMD ["pm2-runtime", "index.js"]
 
 # RUN chmod +x scripts/deploy_aws_ecs.sh
 # CMD ["bash", "-c", "scripts/deploy_aws_ecs.sh"]
