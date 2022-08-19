@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.APP_PORT || 8000;
 
 app.get('/', (req, res) => {
-  res.send('Hello AWS Apprunner!')
+  res.send('Hello AWS Apprunner! 2022-08-19')
 })
 
 app.get('/ping', (req, res) => {
